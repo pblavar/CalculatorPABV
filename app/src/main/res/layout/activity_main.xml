@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F0F0"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Display -->
+        <TextView
+            android:id="@+id/display1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:textSize="24sp"
+            android:text=""
+            android:textColor="#000000"
+            android:textAlignment="textEnd"
+            android:background="#F0F0F0"
+            android:padding="12dp"
+            android:elevation="12dp"
+            android:layout_marginBottom="-18dp"/>
+
+        <TextView
+            android:id="@+id/display2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="40dp"
+            android:textSize="48sp"
+            android:text=""
+            android:textColor="#000000"
+            android:textAlignment="textEnd"
+            android:background="#F0F0F0"
+            android:padding="12dp"
+            android:elevation="12dp"/>
+
+        <!-- Fila 1 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="12dp">
+
+            <Button
+                android:id="@+id/allclear"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_weight="1"
+                android:text="AC"
+                android:textSize="24sp"
+                android:layout_margin="8dp"
+                android:backgroundTint="@color/AddButtons"
+                android:singleLine="true"
+                android:ellipsize="none"/>
+
+            <Button
+                android:id="@+id/clear"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_weight="1"
+                android:text="C"
+                android:textSize="24sp"
+                android:layout_margin="8dp"
+                android:backgroundTint="@color/AddButtons"/>
+
+            <Button
+                android:id="@+id/percentage"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/AddButtons"
+                android:text="%"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/division"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_weight="1"
+                android:text="/"
+                android:textSize="24sp"
+                android:layout_margin="8dp"
+                android:backgroundTint="@color/OperatorButtons"/>
+        </LinearLayout>
+
+        <!-- Fila 2 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="12dp">
+
+            <Button
+                android:id="@+id/seven"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_weight="1"
+                android:text="7"
+                android:textSize="24sp"
+                android:layout_margin="8dp"
+                android:backgroundTint="@color/NumButtons"/>
+
+            <Button
+                android:id="@+id/eight"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_weight="1"
+                android:text="8"
+                android:textSize="24sp"
+                android:layout_margin="8dp"
+                android:backgroundTint="@color/NumButtons" />
+
+            <Button
+                android:id="@+id/nine"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_weight="1"
+                android:text="9"
+                android:textSize="24sp"
+                android:layout_margin="8dp"
+                android:backgroundTint="@color/NumButtons" />
+
+            <Button
+                android:id="@+id/multiplication"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_weight="1"
+                android:text="*"
+                android:textSize="24sp"
+                android:layout_margin="8dp"
+                android:backgroundTint="@color/OperatorButtons" />
+        </LinearLayout>
+
+        <!-- Fila 3 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="12dp">
+
+            <Button
+                android:id="@+id/four"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_weight="1"
+                android:text="4"
+                android:textSize="24sp"
+                android:layout_margin="8dp"
+                android:backgroundTint="@color/NumButtons" />
+
+            <Button
+                android:id="@+id/five"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_weight="1"
+                android:text="5"
+                android:textSize="24sp"
+                android:layout_margin="8dp"
+                android:backgroundTint="@color/NumButtons" />
+
+            <Button
+                android:id="@+id/six"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_weight="1"
+                android:text="6"
+                android:textSize="24sp"
+                android:layout_margin="8dp"
+                android:backgroundTint="@color/NumButtons" />
+
+            <Button
+                android:id="@+id/minus"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_weight="1"
+                android:text="-"
+                android:textSize="24sp"
+                android:layout_margin="8dp"
+                android:backgroundTint="@color/OperatorButtons" />
+        </LinearLayout>
+
+        <!-- Fila 4 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="12dp">
+
+            <Button
+                android:id="@+id/one"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_weight="1"
+                android:text="1"
+                android:textSize="24sp"
+                android:layout_margin="8dp"
+                android:backgroundTint="@color/NumButtons" />
+
+            <Button
+                android:id="@+id/two"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_weight="1"
+                android:text="2"
+                android:textSize="24sp"
+                android:layout_margin="8dp"
+                android:backgroundTint="@color/NumButtons" />
+
+            <Button
+                android:id="@+id/three"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_weight="1"
+                android:text="3"
+                android:textSize="24sp"
+                android:layout_margin="8dp"
+                android:backgroundTint="@color/NumButtons" />
+
+            <Button
+                android:id="@+id/plus"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_weight="1"
+                android:text="+"
+                android:textSize="24sp"
+                android:layout_margin="8dp"
+                android:backgroundTint="@color/OperatorButtons" />
+        </LinearLayout>
+
+        <!-- Fila 5 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/symbol"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_weight="1"
+                android:text="+/-"
+                android:textSize="24sp"
+                android:layout_margin="8dp"
+                android:backgroundTint="@color/NumButtons"
+                android:singleLine="true"
+                android:ellipsize="none"/>
+
+            <Button
+                android:id="@+id/zero"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_weight="1"
+                android:text="0"
+                android:textSize="24sp"
+                android:layout_margin="8dp"
+                android:backgroundTint="@color/NumButtons" />
+
+            <Button
+                android:id="@+id/point"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_weight="1"
+                android:text="."
+                android:textSize="24sp"
+                android:layout_margin="8dp"
+                android:backgroundTint="@color/NumButtons" />
+
+            <Button
+                android:id="@+id/result"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_weight="1"
+                android:text="="
+                android:textSize="24sp"
+                android:layout_margin="8dp"
+                android:backgroundTint="@color/OperatorButtons" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
